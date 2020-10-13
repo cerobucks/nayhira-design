@@ -21,8 +21,15 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
-
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 
 </head>
 
@@ -130,12 +137,14 @@
 
             </div>
         </div>
+
     </header>
+    <i id="mi"></i>
 
 
-    <div class="container" id="mi">
+    <div class="container mt-5 mb-5">
 
-        <div class="mt-4 card">
+        <div class="mt-5 card">
             <div class="row">
 
                 <div class="col-md-6">
@@ -156,35 +165,43 @@
 
                             <div class="col-md-11 text-left">
                                 <!-- <img src="./img/nombre-yellow.png" width="50%"> -->
-                                <h4 class="tittle-blue pt-2">
+                                <h5 class="tittle-blue pt-2">
                                     Trabajo arduamente para ayudar a mis clientes a encontrar los mejores planes de
                                     seguros de
                                     vida y salud.
-                                </h4>
-                                <br>
+                                </h5>
 
                                 <h6 class="tittle-blue">
-                                    Mi enfoque es simple: Me enfoco en priorizar las necesidades de cada uno de
-                                    mis clientes para así ofrecerle los mejores planes que se adapten a sus
-                                    requerimientos.
+                                    Mi enfoque es simple: Priorizo las necesidades de mis clientes para así ofrecer los
+                                    mejores planes que se adapten a sus requerimientos reales.
                                     <br>
                                     <br>
-                                    Con mi experiencia en la industria de seguros y formación en medicina,
-                                    me da una excelente
-                                    ventaja a la hora de servir a mis clientes.
+                                    Mi experiencia en la
+                                    industria de seguros y formación en medicina, me permiten tener una excelente
+                                    ventaja a la hora de asesorar a mis clientes, nunca los dejo con dudas porque sé lo
+                                    importante que es contar con un buen seguro de vida y la seguridad que aporta a sus
+                                    bienes.
                                     <br>
                                     <br>
-                                    Les doy seguimiento para
-                                    comprender las necesidades que tienen y poder brindar un servicio único.
+                                    Y ni hablar del seguimiento, luego que mis clientes cuentan con su seguro,
+                                    tienen un proceso de asesoría personalizada en el proceso para que sepan exactamente
+                                    con lo que pueden contar en los diferentes momentos de sus vidas.
                                     <br>
                                     <br>
-                                    ¡Siempre estoy dispuesta
-                                    a ayudarte!</h6>
+                                    Siempre dispuesta
+                                    a ayudarles, <a href="#servicio" class="tittle-blue"
+                                        style="text-decoration: none;">¿Comenzamos? <i
+                                            class="fa fa-hand-o-down"></i></a>
+
+                                </h6>
 
                                 <p class="tittle-yellow" style="padding-bottom: 0; margin-bottom: 0;"><i
                                         class="fa fa-envelope"></i> nayhiragonzalez@gmail.com</p>
                                 <p class="tittle-yellow" style="padding-top: 0; margin-top: 0;"><i
                                         class="fa fa-phone"></i> 1-786-508-6513</p>
+                                <!-- <a class="tittle-yellow" href="#servicio">¿Quieres saber más sobre los servicios? 
+                                    <i class="fa fa-hand-o-down"></i>
+                                </a> -->
 
                             </div>
                         </div>
@@ -194,6 +211,7 @@
             </div>
         </div>
     </div>
+
 
 
     <div class="mt-4 pb-5 container-fluid bg" id="servicio">
@@ -201,86 +219,206 @@
             <h1 class="pt-5 pb-5 tittle-yellow text-center col-md-12">¿Qué servicios ofrezco?</h1>
             <div class="container">
 
-                <div class="row">
+                <div class="row" style="cursor: pointer;" data-toggle="modal" data-target="#exampleModal">
 
-                    <div class="col-md-4 tittle-yellow">
-                        <div class=" p-2">
+                    <div class="col-md-1 tittle-yellow"></div>
 
-                            <img src="./img/family.png" width="100%">
-                            <h4 class="pb-3 pt-3">Seguros de vida</h4>
+                    <div class="col-md-2 tittle-yellow">
+                        <div class=" p-2 text-center">
 
+                            <img src="./img/family.png" width="100%" class="d-none d-md-block">
+                            <img src="./img/family.png"  style="display: block; margin-left: auto;margin-right: auto;width: 60%;" class="d-block d-md-none">
+                            <h6 class="pb-3 pt-3">Seguros de vida</h6>
+                            <!-- 
                             <p style="color: white;">
                                 Los seguros de vida son una protección económica para tu familia en caso de fallecer.
                                 Este es un excelente paso a tomar para mantener seguros a los tuyos incluso cuando no
                                 estés.
 
 
-                            </p>
+                            </p> -->
 
                         </div>
                     </div>
 
-                    <div class="col-md-4 tittle-yellow">
+                    <div class="col-md-2 tittle-yellow">
 
-                        <div class=" p-2">
-                            <img src="./img/health.png" width="100%">
+                        <div class=" p-2 text-center">
+                            <img src="./img/health.png" width="100%" class="d-none d-md-block">
+                            <img src="./img/health.png" style="display: block; margin-left: auto;margin-right: auto;width: 60%;" class="d-block d-md-none">
 
-                            <h4 class="pt-3 pb-3">Seguros de salud</h4>
-                            <p style="color: white;" class="pb-2 ">
+                            <h6 class="pt-3 pb-3">Seguros de salud</h6>
+                            <!-- <p style="color: white;" class="pb-2 ">
                                 Los seguros de salud te ayudan a cubrir los altos costos de la atención médica que
                                 puedas necesitar.
                                 Con mi experiencia te ayudo a elegir al que más se ajuste a tus necesidades.
-                                Me especializo en los Indivudales, Grupales y Medicare.
-                            </p>
+                                Me especializo en los indivudales, grupales y medicare.
+                            </p> -->
                         </div>
                     </div>
 
-                    <div class="col-md-4 tittle-yellow">
+                    <div class="col-md-2 tittle-yellow">
 
 
-                        <div class=" p-2">
-                            <img src="./img/dental.png" width="100%">
-                            <h4 class="pb-3 pt-3">Seguros complementarios</h4>
-                            <p style="color: white;" class="pb-2">
+                        <div class=" p-2 text-center">
+                            <img src="./img/dental.png" width="100%" class="d-none d-md-block">
+                            <img src="./img/dental.png"  style="display: block; margin-left: auto;margin-right: auto;width: 60%;" class="d-block d-md-none">
+                            <h6 class="pb-3 pt-3">Seguros complementarios</h6>
+                            <!-- <p style="color: white;" class="pb-2">
                                 Los seguros complementarios te ayudan a cubrir más allá de la cobertura de un seguro de
                                 salud.
-                                Entre estos estan: Seguros dentales, Seguros de visión, Seguros accidentals,
-                                Seguros hospitalarios de compensation
-                            </p>
+                                Entre estos estan: seguros dentales, seguros de visión, seguros accidentales,
+                                seguros hospitalarios de compensación.
+                            </p> -->
                         </div>
                     </div>
 
-                    <div class="col-md-4 tittle-yellow">
-                        <div class=" p-2">
-                            <img src="./img/financial.png" width="100%">
-                            <h4 class="pb-3 pt-3">Financial Planning</h4>
-                            <p style="color: white;">
+                    <div class="col-md-2 tittle-yellow">
+                        <div class=" p-2 text-center">
+                            <img src="./img/financial.png" width="100%" class="d-none d-md-block">
+                            <img src="./img/financial.png"  style="display: block; margin-left: auto;margin-right: auto;width: 60%;" class="d-block d-md-none">
+                            <h6 class="pb-3 pt-3">Financial Planning</h6>
+                            <!-- <p style="color: white;">
                                 Te ayudó a planificarte financieramente para que puedas lograr todas esas metas que
                                 quieres alcanzar.
-                            </p>
+                            </p> -->
 
                         </div>
 
                     </div>
 
-                    <div class="col-md-4 tittle-yellow">
-                        <div class=" p-2">
-                            <img src="./img/estate.png" width="100%">
-                            <h4 class="pb-3 pt-3">Estate Planning</h4>
-                            <p style="color: white;">
+                    <div class="col-md-2 tittle-yellow">
+                        <div class=" p-2 text-center">
+                            <img src="./img/estate.png" width="100%" class="d-none d-md-block">
+                            <img src="./img/estate.png"  style="display: block; margin-left: auto;margin-right: auto;width: 60%;" class="d-block d-md-none">
+                            <h6 class="pb-3 pt-3">Estate Planning</h6>
+                            <!-- <p style="color: white;">
                                 Te ayudo a organizar y planificar tu patrimonio para que puedas saber en qué pie estas
                                 parado y puedas manejar tus posesiones de una forma exitosa.
 
-                            </p>
+                            </p> -->
 
                         </div>
                     </div>
+
+                    <div class="col-md-1 tittle-yellow"></div>
+
+                    <div class="col-md-12 text-center">
+
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-xl" role="document">
+                                <div class="modal-content">
+
+                                    <div class="modal-body bg">
+
+                                        <div class="col-md-12">
+                                            <div class="row">
+
+                                                <div class="col-md-12 text-right">
+                                                    <i class="fa fa-times" style="color:white;" data-dismiss="modal" aria-label="Close"></i>
+                                                </div>
+
+                                                <div class="col-md-4 tittle-yellow">
+                                                    <div class=" p-2 text-center">
+
+                                                        <img src="./img/family.png" width="60%">
+                                                        <h6 class="pb-3 pt-3">Seguros de vida</h6>
+
+                                                        <p style="color: white;">
+                                                            Los seguros de vida son una protección económica para tu
+                                                            familia en caso de fallecer.
+                                                            Este es un excelente paso a tomar para mantener seguros a
+                                                            los tuyos incluso cuando no
+                                                            estés.
+
+
+                                                        </p>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4 tittle-yellow">
+
+                                                    <div class=" p-2 text-center">
+                                                        <img src="./img/health.png" width="60%">
+
+                                                        <h6 class="pt-3 pb-3">Seguros de salud</h6>
+                                                        <p style="color: white;" class="pb-2 ">
+                                                            Los seguros de salud te ayudan a cubrir los altos costos de
+                                                            la atención médica que
+                                                            puedas necesitar.
+                                                            Con mi experiencia te ayudo a elegir al que más se ajuste a
+                                                            tus necesidades.
+                                                            Me especializo en los indivudales, grupales y medicare.
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4 tittle-yellow">
+
+
+                                                    <div class=" p-2 text-center">
+                                                        <img src="./img/dental.png" width="60%">
+                                                        <h6 class="pb-3 pt-3">Seguros complementarios</h6>
+                                                        <p style="color: white;" class="pb-2">
+                                                            Los seguros complementarios te ayudan a cubrir más allá de
+                                                            la cobertura de un seguro de
+                                                            salud.
+                                                            Entre estos estan: seguros dentales, seguros de visión,
+                                                            seguros accidentales,
+                                                            seguros hospitalarios de compensación.
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4 tittle-yellow">
+                                                    <div class=" p-2 text-center">
+                                                        <img src="./img/financial.png" width="60%">
+                                                        <h6 class="pb-3 pt-3">Financial Planning</h6>
+                                                        <p style="color: white;">
+                                                            Te ayudó a planificarte financieramente para que puedas
+                                                            lograr todas esas metas que
+                                                            quieres alcanzar.
+                                                        </p>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-md-4 tittle-yellow">
+                                                    <div class=" p-2 text-center">
+                                                        <img src="./img/estate.png" width="60%">
+                                                        <h6 class="pb-3 pt-3">Estate Planning</h6>
+                                                        <p style="color: white;">
+                                                            Te ayudo a organizar y planificar tu patrimonio para que
+                                                            puedas saber en qué pie estas
+                                                            parado y puedas manejar tus posesiones de una forma exitosa.
+
+                                                        </p>
+
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
 
                 </div>
             </div>
 
             <h1 class="pt-5 tittle-yellow text-center col-md-12">Beneficios de asegurarte</h1>
-            <p class="pb-5 text-center col-md-12" style="color: white;">Tener una cobertura médica puede ser excelente para evitar grandes gastos en casos de emergencias.
+            <p class="pb-5 text-center col-md-12" style="color: white;">Tener una cobertura médica puede ser excelente
+                para evitar grandes gastos en casos de emergencias.
             </p>
 
             <div class="container">
@@ -288,29 +426,33 @@
                 <div class="row">
                     <div class="col-md-2"></div>
                     <div class="col-md-4">
-                           
-                            <div class="row">
-                                <div class="col-2">
-                                    <h6 class="tittle-yellow pt-2"> <strong class="circle">01</strong></h6>
-                                   
-                                </div>
-                                <div class="col-10">
-                                    <p  style="color: white;">Te da la libertad de elegir los centros médicos y especialistas que desees.
-                                    </p>
-                                </div>
+
+                        <div class="row">
+                            <div class="col-2">
+                                <h6 class="tittle-yellow pt-2"> <strong class="circle"><i
+                                            class="fa fa-medkit"></i></strong></h6>
+
                             </div>
+                            <div class="col-10">
+                                <p style="color: white;">Te da la libertad de elegir los centros médicos y especialistas
+                                    que desees.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-md-4">
 
-                            <div class="row">
-                                <div class="col-2">
-                                    <h6 class="tittle-yellow pt-2"> <strong class="circle">02</strong></h6>
-                                   
-                                </div>
-                                <div class="col-10">
-                                    <p  style="color: white;">Te permite disponer de una habitación privada en caso de necesitar ser hospitalizado.
-                                    </p>
-                                </div>
+                        <div class="row">
+                            <div class="col-2">
+                                <h6 class="tittle-yellow pt-2"> <strong class="circle"><i
+                                            class="fa fa-bed"></i></strong></h6>
+
+                            </div>
+                            <div class="col-10">
+                                <p style="color: white;">Te permite disponer de una habitación privada en caso de
+                                    necesitar ser hospitalizado.
+                                </p>
+                            </div>
 
                         </div>
                     </div>
@@ -318,28 +460,32 @@
                     <div class="col-md-2"></div>
                     <div class="col-md-4">
 
-                            <div class="row">
-                                <div class="col-2">
-                                    <h6 class="tittle-yellow pt-2"> <strong class="circle">03</strong></h6>
-                                   
-                                </div>
-                                <div class="col-10">
-                                    <p  style="color: white;">Te permite tener cobertura internacional, así estás cubierto donde sea que vayas. 
-                                    </p>
-                                </div>
+                        <div class="row">
+                            <div class="col-2">
+                                <h6 class="tittle-yellow pt-2"> <strong class="circle1"><i
+                                            class="fa fa-plane"></i></strong></h6>
+
                             </div>
+                            <div class="col-10">
+                                <p style="color: white;">Te permite tener cobertura internacional, así estás cubierto
+                                    donde sea que vayas.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-md-4">
 
-                            <div class="row">
-                                <div class="col-2">
-                                    <h6 class="tittle-yellow pt-2"> <strong class="circle">04</strong></h6>
-                                   
-                                </div>
-                                <div class="col-10">
-                                    <p  style="color: white;">Te permite tener acceso a cuidados privados y tecnologías que preserven tu salud. 
-                                    </p>
-                                </div>
+                        <div class="row">
+                            <div class="col-2">
+                                <h6 class="tittle-yellow pt-2"> <strong class="circle1"><i
+                                            class="fa fa-stethoscope"></i></strong></h6>
+
+                            </div>
+                            <div class="col-10">
+                                <p style="color: white;">Te permite tener acceso a cuidados privados y tecnologías que
+                                    preserven tu salud.
+                                </p>
+                            </div>
 
                         </div>
                     </div>
@@ -349,6 +495,8 @@
             </div>
         </div>
     </div>
+
+
 
     <div style="background: white;">
         <div class="container">
@@ -499,7 +647,7 @@
 
                 <div class="col-md-6">
 
-                    <h3 class="tittle-yellow">Déjame un Mensaje</h3>
+                    <h3 class="tittle-yellow">Déjame un mensaje</h3>
                     <div class="form-group">
                         <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Nombre">
                         <!-- <small id="emailHelp" class="form-text text-muted">Este campo es obligatorio.</small> -->
@@ -513,7 +661,7 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <input type="text" class="form-control" aria-describedby="emailHelp"
-                                    placeholder="# de teléfono">
+                                    placeholder="Número de teléfono">
                                 <!-- <small id="emailHelp" class="form-text text-muted">Este campo es obligatorio.</small> -->
                             </div>
                         </div>
@@ -533,7 +681,7 @@
                         <!-- <small id="emailHelp" class="form-text text-muted">Este campo es obligatorio.</small> -->
                     </div>
 
-                    <button class="btn btn-md button-mail" style="width: 100%;">Enviar</button>
+                    <button class="btn btn-md button-mail" style="width: 100%;background: white;">Enviar</button>
 
 
                 </div>
@@ -551,6 +699,12 @@
                 <div class="col-md-4">
                     <img src="./img/logo-yellow.png" width="50%" class="pb-2">
 
+                    <p  style="color: white;font-size: 14px;">
+                        <i class="fa fa-phone"></i> +1 786-508-6513<br>
+                        <i class="fa fa-fax"></i> +1 786-524-0939<br>
+                        <i class="fa fa-envelope"></i> nayhiragonzalez@gmail.com<br>
+                        <i class="fa fa-envelope"></i> nayhira.gonzalez@acostaInsurance.com<br>
+                    </p>
                 </div>
                 <div class="col-md-4">
                     <h4 class="tittle-yellow">Horarios</h4>
@@ -567,13 +721,10 @@
                 <div class="col-md-4">
                     <h4 class="tittle-yellow">Dirección</h4>
                     <p style="color: white;font-size: 14px;">
-                        Nayhira González<br>
-                        Cell: 1-786-508-6513<br>
-                        Fax: 1- 786-524-0939<br>
                         8000 NW 7th ST suite 202, Miami FL 33126<br>
-                        nayhiragonzalez@gmail.com<br>
-                        nayhira.gonzalez@acostaInsurance.com<br>
+
                     </p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3592.823629770669!2d-80.32898288497874!3d25.776388483629997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b9060a97a97f%3A0xae95a91ffd7e4612!2s8000%20NW%207th%20St%20%23202%2C%20Miami%2C%20FL%2033126%2C%20EE.%20UU.!5e0!3m2!1ses!2sdo!4v1602612754897!5m2!1ses!2sdo" width="100%" height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
                 </div>
 
@@ -583,6 +734,14 @@
             </div>
         </div>
     </div>
+
+
+
+
+    <a href="https://api.whatsapp.com/send?phone=17867068244&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20tus%20servicios."
+        class="float" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+    </a>
 
 </body>
 

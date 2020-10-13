@@ -20,7 +20,7 @@
 
 
    background-image:
-    linear-gradient(to right, rgba(6, 20, 57, 0.70), rgba(6, 20, 57, 0.05)),
+    linear-gradient(to right, rgba(6, 20, 57, 1), rgba(6, 20, 57, 0.10)),
     url('img/landing1.jpg');
 
   background-size: cover;
@@ -123,15 +123,28 @@ nav .navbar-nav li a:hover{
     font: 24px;
   }
 
+  .circle1 {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    padding: 8px 10px;
+    border: 2px solid #DCC579;
+    color: #DCC579;
+    text-align: center;
+
+    font: 32px;
+  }
+
 .parallax{
-    background: linear-gradient(to right, rgba(6, 20, 57, 0.70), rgba(6, 20, 57, 0.30)),
-     url('img/parallax.jpg');
+    background: linear-gradient(to right, rgba(6, 20, 57, 0.90), rgba(6, 20, 57, 0.05)),
+     url('img/parallax1.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 80vh;
 }
+
 
 .bg {
     background: #061439;
@@ -151,4 +164,37 @@ nav .navbar-nav li a:hover{
 
 }
 
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+   font-size:30px;
+	/* box-shadow: 2px 2px 3px #999; */
+    z-index:100;
+    text-decoration: none;
+}
+
+.float:hover{
+    color: white;
+}
+
+.my-float{
+	margin-top:16px;
+}
+.my-float:hover{
+    color: white;
+}
+
+.service-btn {
+    font-size: 17px;
+    border: solid 2px white;
+    color: white;
+    transition: 0.3s;
+}
 
