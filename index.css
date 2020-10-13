@@ -7,6 +7,9 @@
       font-family: 'Gilroy';
       margin: 0;
       padding: 0;
+      background-image: url("./img/icon-yellow-repeat.png");
+    background-repeat: repeat;
+    background-size: 70px;
   }
 
   html {
@@ -15,8 +18,6 @@
 
 .header {
 
-  /* background-image: linear-gradient(to right, rgba(6, 20, 52, 1), rgba(6, 20, 52, 0.01)),
-   url(./img/landing.jpg); */
 
    background-image:
     linear-gradient(to right, rgba(6, 20, 57, 0.70), rgba(6, 20, 57, 0.05)),
@@ -32,14 +33,12 @@
 
   .header1 {
 
-    /* background-image: linear-gradient(to right, rgba(6, 20, 52, 1), rgba(6, 20, 52, 0.01)),
-     url(./img/landing.jpg); */
   
      background-image:
-      linear-gradient(to right, rgba(6, 20, 57, 1), rgba(6, 20, 57, 0.70));
-      /* url('img/landing1.jpg');
-   */
+      linear-gradient(to right, rgba(6, 20, 57, 1), rgba(6, 20, 57, 0.70)), url('img/landing1-sm.png');
+  
     background-size: cover;
+    /* background-position:  right; */
     min-height: 100vh;
   }
   
@@ -93,11 +92,16 @@ nav .navbar-nav li a:hover{
 .header-text a:hover{
     background: white;
     color: #061439;
-    /* border: solid 2px #DCC579; */
-
 }
 
 
+.repeat-background {
+
+    
+    background-position: left center;
+
+
+}
 
 .tittle-yellow{
     color: #DCC579;
@@ -107,13 +111,17 @@ nav .navbar-nav li a:hover{
     color: #061439;
 }
 
-.circle-number{
+.circle {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    padding: 8px;
+    border: 2px solid #DCC579;
+    color: #DCC579;
+    text-align: center;
 
-    border: 1px solid #061439;
-    width: 40px;
-    padding: 1px 2px;
-    border-radius: 200px;
-}
+    font: 24px;
+  }
 
 .parallax{
     background: linear-gradient(to right, rgba(6, 20, 57, 0.70), rgba(6, 20, 57, 0.30)),
