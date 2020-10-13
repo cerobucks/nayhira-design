@@ -45,6 +45,20 @@
   .header1 .navbar {
       background-color: transparent !important;
     }
+
+    .header2 {
+
+  
+    background: rgba(6, 20, 57,1);
+     
+       background-size: cover;
+       /* background-position:  right; */
+     }
+     
+     .header2 .navbar {
+         background-color: transparent !important;
+       }
+
   nav .navbar-nav li a{
     /* color: white !important; */
     color: #DCC579 !important;
@@ -220,5 +234,7 @@ nav .navbar-nav li a:hover{
     border-radius: 100%;
     background-color: #000;
 }
+
+
 
 
