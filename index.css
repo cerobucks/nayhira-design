@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('./fonts/gilroy.ttf') format("truetype"); 
+  }
+
+  body{
+      font-family: 'Gilroy';
+      margin: 0;
+      padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+.header {
+
+  /* background-image: linear-gradient(to right, rgba(6, 20, 52, 1), rgba(6, 20, 52, 0.01)),
+   url(./img/landing.jpg); */
+
+   background-image:
+    linear-gradient(to right, rgba(6, 20, 57, 0.70), rgba(6, 20, 57, 0.05)),
+    url('img/landing1.jpg');
+
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.header .navbar {
+    background-color: transparent !important;
+  }
+
+  .header1 {
+
+    /* background-image: linear-gradient(to right, rgba(6, 20, 52, 1), rgba(6, 20, 52, 0.01)),
+     url(./img/landing.jpg); */
+  
+     background-image:
+      linear-gradient(to right, rgba(6, 20, 57, 1), rgba(6, 20, 57, 0.70));
+      /* url('img/landing1.jpg');
+   */
+    background-size: cover;
+    min-height: 100vh;
+  }
+  
+  .header1 .navbar {
+      background-color: transparent !important;
+    }
+  nav .navbar-nav li a{
+    /* color: white !important; */
+    color: #DCC579 !important;
+    transition: 0.3s;
+    opacity: 0.4;
+
+}
+
+nav .navbar-nav li a:hover{
+    
+    opacity: 1;
+
+}
+
+.header-text {
+    padding: 5%;
+    color: white;
+    transition: 0.3s;
+
+}
+
+.header-text h1{
+    font-weight: 700;
+    font-size: 70px;
+}
+.header-text h6{
+    font-weight: 300;
+    border-top: white solid 1px;
+    padding-top: 5px;
+}
+
+.header-text p i{
+
+    padding: 0px 12px 0px 0px;
+    font-size: 20px;
+}
+
+.header-text a{
+    font-size: 17px;
+    border: solid 2px white;
+    color: white;
+    transition: 0.3s;
+}
+
+.header-text a:hover{
+    background: white;
+    color: #061439;
+    /* border: solid 2px #DCC579; */
+
+}
+
+
+
+.tittle-yellow{
+    color: #DCC579;
+}
+
+.tittle-blue {
+    color: #061439;
+}
+
+.circle-number{
+
+    border: 1px solid #061439;
+    width: 40px;
+    padding: 1px 2px;
+    border-radius: 200px;
+}
+
+.parallax{
+    background: linear-gradient(to right, rgba(6, 20, 57, 0.70), rgba(6, 20, 57, 0.30)),
+     url('img/parallax.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 80vh;
+}
+
+.bg {
+    background: #061439;
+}
+
+.button-mail{
+    font-size: 17px;
+    border: solid 2px white;
+    color: white;
+    transition: 0.3s;
+
+}
+.button-mail:hover{
+    background: white;
+    color: #061439;
+    /* border: solid 2px #DCC579; */
+
+}
+
+
