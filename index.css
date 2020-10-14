@@ -20,8 +20,8 @@
 
 
    background-image:
-    linear-gradient(to right, rgba(6, 20, 57, 1), rgba(6, 20, 57, 0.10)),
-    url('img/landing1.jpg');
+    linear-gradient(to right, rgba(6, 20, 57, 1), rgba(6, 20, 57, 0.80));
+    /* url('img/landing1.jpg'); */
 
   background-size: cover;
   min-height: 100vh;
@@ -35,7 +35,8 @@
 
   
      background-image:
-      linear-gradient(to right, rgba(6, 20, 57, 1), rgba(6, 20, 57, 0.70)), url('img/landing1-sm.png');
+      linear-gradient(to right, rgba(6, 20, 57, 1), rgba(6, 20, 57, 0.80));
+       /* url('img/landing1-sm.png'); */
   
     background-size: cover;
     /* background-position:  right; */
