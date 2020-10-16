@@ -36,22 +36,25 @@
 </head>
 
 <body>
-    <header class="header d-none d-md-block">
+    <header class="header">
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand"><img src="./img/logo-yellow.png" width="120px"></a>
-            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button> -->
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <!-- <a class="navbar-brand d-block d-md-none"><img src="./img/logo-yellow.png" width="120px"></a> -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars" style="color:#DCC579; font-size:24px;"></i>
+
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#mi">¿Quiénes somos?</a>
+                    <li class="nav-item d-block d-md-none">
+                        <a class="nav-link" href="#mi">¿Quiénes somos?
+                        </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item d-block d-md-none">
                         <a class="nav-link" href="#servicio">Servicios</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item d-block d-md-none">
                         <a class="nav-link" href="#contacto">Contacto</a>
                     </li>
 
@@ -64,24 +67,40 @@
             <div class="row">
                 <div class="col-md-1"></div>
 
-                <div class="col-md-5 header-text">
+                <div class="col-md-12 header-text">
 
                     <!-- <h6>Bienvenido/a a mi website</h6> -->
 
-                    <h1>Hola, soy<br> Nayhira González</h1>
-                    <h6 class="col-md-9" style="margin-bottom: 0;padding-bottom: 0;"></h6>
-                    <p style="top:0;">AGENTE DE SEGUROS</p>
-                    <p>Somos una agencia que ayudamos a brindar servicios y asesorías para encontrar los mejores planes
-                        de seguros de vida y salud, tomando en cuenta sus necesidades.</p>
+                    <!-- <h1>Hola, soy<br> Nayhira González</h1> -->
+                    <!-- <h6 class="col-md-9" style="margin-bottom: 0;padding-bottom: 0;"></h6> -->
+                    <!-- <p style="top:0;">AGENTE DE SEGUROS</p> -->
+                    
+                     <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-6">
+                            <img src="./img/logo-yellow.png" width="100%">
+                        </div>
+                        <div class="col-md-3"></div>
+                        <div class="col-md-3"></div>
 
-                    <p>
-                        <i class="fa fa-facebook"></i>
-                        <i class="fa fa-instagram"></i>
-                        <i class="fa fa-whatsapp"></i>
-                    </p>
 
-                    <a class="btn btn-md" href="#mi">Leer más</a>
-                </div>
+
+                        <div class="col-md-5 my-auto">
+                            <p class="pt-3"></p>
+                            <p>Somos una agencia que ayudamos a brindar servicios y asesorías para encontrar los mejores planes
+                                de seguros de vida y salud, tomando en cuenta sus necesidades.</p>
+        
+                            <p>
+                                <i class="fa fa-facebook"></i>
+                                <i class="fa fa-instagram"></i>
+                                <i class="fa fa-whatsapp"></i>
+                            </p>
+        
+                            <a class="btn btn-md" href="#mi">Leer más</a>
+                        </div>
+                        </div>
+                     </div>
+                   
                 <div class="col-md-5"></div>
 
 
@@ -89,7 +108,7 @@
         </div>
     </header>
 
-    <header class="header1 d-block d-md-none">
+    <!-- <header class="header1 d-block d-md-none">
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand"><img src="./img/logo-yellow.png" width="120px"></a>
@@ -118,16 +137,19 @@
         <div class="col-md-12">
 
             <div class="row">
-                <div class="col-md-1"></div>
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
 
-                <div class="col-md-5 header-text">
+                </div>
+                <div class="col-md-3"></div>
+                <div class="col-md-3"></div>
 
-                    <!-- <h6>Bienvenido/a a mi website</h6> -->
 
-                    <h1>Hola, soy<br> Nayhira González</h1>
-                    <h6 class="col-md-9" style="margin-bottom: 0;padding-bottom: 0;"></h6>
-                    <p style="top:0;">AGENTE DE SEGUROS</p>
-                    <p>Somos una agencia que ayudamos a brindar servicios y asesorías para encontrar los mejores planes de seguros de vida y salud, tomando en cuenta sus necesidades.</p>
+
+                <div class="col-md-5 my-auto">
+                    <p class="pt-3"></p>
+                    <p>Somos una agencia que ayudamos a brindar servicios y asesorías para encontrar los mejores planes
+                        de seguros de vida y salud, tomando en cuenta sus necesidades.</p>
 
                     <p>
                         <i class="fa fa-facebook"></i>
@@ -137,13 +159,10 @@
 
                     <a class="btn btn-md" href="#mi">Leer más</a>
                 </div>
-                <div class="col-md-5"></div>
-
-
-            </div>
+                </div>
         </div>
 
-    </header>
+    </header> -->
     <i id="mi"></i>
 
 
@@ -171,26 +190,25 @@
                             <div class="col-md-11 text-left">
                                 <!-- <img src="./img/nombre-yellow.png" width="50%"> -->
                                 <h5 class="tittle-blue pt-2">
-                                    Trabajo arduamente para ayudar a mis clientes a encontrar los mejores planes de
-                                    seguros de
-                                    vida y salud.
+                                    Trabajo arduamente para ayudar a los clientes a encontrar los mejores planes de
+                                    seguros de vida y salud.
                                 </h5>
 
                                 <h6 class="tittle-blue">
-                                    Mi enfoque es simple: Priorizo las necesidades de mis clientes para así ofrecer los
-                                    mejores planes que se adapten a sus requerimientos reales.
+                                    Mi enfoque es priorizar las necesidades de los clientes para así ofrecer los mejores
+                                    planes de que se adapten a sus requerimientos reales.
                                     <br>
                                     <br>
-                                    Mi experiencia en la
-                                    industria de seguros y formación en medicina, me permiten tener una excelente
-                                    ventaja a la hora de asesorar a mis usuarios, nunca los dejo con dudas porque sé lo
-                                    importante que es contar con un buen seguro de vida y la seguridad que aporta a sus
-                                    bienes.
+                                    Mi experiencia en la industria de seguros y mi formación en medicina, me permiten
+                                    tener una amplia gama para asesorar a los clientes. Siempre aclarando todas las
+                                    dudas porque sé, lo importante que es contar con un buen seguro de vida y la
+                                    seguridad que aporta a sus bienes.
                                     <br>
                                     <br>
-                                    Y ni hablar del seguimiento, luego que mis clientes cuentan con su seguro,
-                                    tienen un proceso de asesoría personalizada en el proceso para que sepan exactamente
-                                    con lo que pueden contar en los diferentes momentos de sus vidas.
+                                    Una vez los clientes cuentan con su seguro, les brindó todo el seguimiento con
+                                    respecto al proceso y asesoría personalizada para que sepan exactamente en que
+                                    pueden utilizar su seguro en las diferentes situaciones en las diferentes
+                                    situaciones que se presentan en su vida.
                                     <br>
                                     <br>
                                     Siempre dispuesta
@@ -454,8 +472,8 @@
 
 
             <h1 class="pt-5 tittle-yellow text-center col-md-12">Beneficios de tener una cobertura</h1>
-            <p class="pb-5 text-center col-md-12" style="color: white;">Tener una cobertura médica puede ser excelente
-                para evitar grandes gastos en casos de emergencias.
+            <p class="pb-5 text-center col-md-12" style="color: white;">Tener una muy buena cobertura puede ser
+                excelente para evitar grandes gastos en casos de emergencias.
             </p>
 
             <div class="container">
@@ -503,7 +521,8 @@
 
                             </div>
                             <div class="col-10">
-                                <p style="color: white;">Permite proteger a tu familia y los tuyos en caso de una catástrofe.
+                                <p style="color: white;">Permite proteger a tu familia y los tuyos en caso de una
+                                    catástrofe.
                                 </p>
                             </div>
                         </div>
@@ -517,14 +536,31 @@
 
                             </div>
                             <div class="col-10">
-                                <p style="color: white;">Te permite tener acceso a cuidados privados y tecnologías que
-                                    preserven tu salud.
+                                <p style="color: white;">Podrías tener acceso a cuidados privados y tecnologías que resguarden tu salud.
+
                                 </p>
                             </div>
 
                         </div>
                     </div>
                     <div class="col-md-2"></div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-4">
+
+                        <div class="row">
+                            <div class="col-2">
+                                <h6 class="tittle-yellow pt-2"> <strong class="circle"><i
+                                            class="fa fa-money"></i></strong></h6>
+
+                            </div>
+                            <div class="col-10">
+                                <p style="color: white;">Permite indemnizar el ingreso perdido por accidente y hospitalización.
+
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
 
                 </div>
             </div>
@@ -539,7 +575,8 @@
             <h3 class="text-center pt-5 tittle-blue pb-1">Estados en los que ofrecemos servicios</h3>
 
             <div class="col-md-12">
-                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1xnYOimOj9Z6jPwY9WRqBj3WBL6z-x3bz" width="100%" height="480"></iframe>
+                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1xnYOimOj9Z6jPwY9WRqBj3WBL6z-x3bz" width="100%"
+                    height="480"></iframe>
 
             </div>
         </div>
@@ -622,7 +659,8 @@
                     <p style="color: white;font-size: 13px;">
                         Lunes a Viernes de 9:00 am a 5:00 pm.
                         <br> <br>Sábados de 10:00 am a 4:00 pm.
-                        <br> <br> En periodo de inscripción abierta que empieza desde el 1 de noviembre hasta en 15 de diciembre en la mayoría de estados. Durante estos 45 dias trabajaremos horarios extendidos.
+                        <br> <br> En periodo de inscripción abierta que empieza desde el 1 de noviembre hasta en 15 de
+                        diciembre en la mayoría de estados. Durante estos 45 dias trabajaremos horarios extendidos.
 
                     </p>
 
