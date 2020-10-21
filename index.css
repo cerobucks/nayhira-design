@@ -179,6 +179,20 @@ nav .navbar-nav li a:hover{
 
 }
 
+.button-mail1{
+    font-size: 17px;
+    border: solid 2px #DCC579;
+    color: white;
+    transition: 0.3s;
+
+}
+.button-mail1:hover{
+    background: DCC579;
+    color: #061439;
+    /* border: solid 2px #DCC579; */
+
+}
+
 .float{
 	position:fixed;
 	width:200px;
