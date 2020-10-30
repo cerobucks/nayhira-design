@@ -268,6 +268,66 @@
 
 
 
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+
+        function getInputValue() {
+            // Selecting the input element and get its value 
+            document.getElementById("nameValid").style.display = "none";
+            document.getElementById("emailValid").style.display = "none";
+            document.getElementById("numValid").style.display = "none";
+            document.getElementById("zipValid").style.display = "none";
+            document.getElementById("messageValid").style.display = "none";
+
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var num = document.getElementById("num").value;
+            var zip = document.getElementById("zip").value;
+            var message = document.getElementById("message").value;
+
+            var re = /\S+@\S+\.\S+/;
+
+            if (name != "" && re.test(email) != "" && num != "" && zip != "" && message != "") {
+
+                  let body = " <strong>Nombre:</strong> "+name+", <strong>Email:</strong> "+email+",<strong>Tel:</strong> "+num+", <strong>Zip Code:</strong> "+zip+",<br><br><strong>Mensaje</strong>: " + message;
+
+                Email.send({
+                    SecureToken: "192635e4-cc55-4f08-808a-3d39fb2b7000",
+                    To: 'nayhiragonzalez@gmail.com',
+                    From: "gonzaleznayhira@gmail.com",
+                    Subject: "nuevo mensaje desde Nayhira Website",
+                    Body: body
+                }).then(
+                    message => alert("¡Email enviado!")
+                );
+
+            } else {
+
+                if (name == "") {
+                    document.getElementById("nameValid").style.display = "block";
+                }
+
+                if (re.test(email) == "") {
+                    document.getElementById("emailValid").style.display = "block";
+                }
+
+                if (num == "") {
+                    document.getElementById("numValid").style.display = "block";
+                }
+
+                if (zip == "") {
+                    document.getElementById("zipValid").style.display = "block";
+                }
+
+                if (message == "") {
+                    document.getElementById("messageValid").style.display = "block";
+                }
+            }
+
+        }
+
+    </script>
+
 
     <div class="pt-5 parallax" id="contacto">
         <div class="container">
@@ -278,44 +338,59 @@
 
                     <h3 class="tittle-yellow">Contáctanos</h3>
                     <div class="form-group">
-                        <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Nombre">
-                        <!-- <small id="emailHelp" class="form-text text-muted">Este campo es obligatorio.</small> -->
+                        <input type="text" class="form-control" id="name" aria-describedby="emailHelp"
+                            placeholder="Nombre">
+                        <small id="nameValid" style="display: none;color: white;" class="form-text">Este campo es
+                            obligatorio.</small>
+
                     </div>
 
                     <div class="form-group">
-                        <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Email">
-                        <!-- <small id="emailHelp" class="form-text text-muted">Este campo es obligatorio.</small> -->
+                        <input type="text" class="form-control" id="email" aria-describedby="emailHelp"
+                            placeholder="Email">
+                        <small id="emailValid" style="display: none;color: white;" class="form-text">Utiliza un email
+                            valido.</small>
+
+
                     </div>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input type="text" class="form-control" aria-describedby="emailHelp"
+                                <input type="text" class="form-control" id="num" aria-describedby="emailHelp"
                                     placeholder="Número de teléfono">
-                                <!-- <small id="emailHelp" class="form-text text-muted">Este campo es obligatorio.</small> -->
+                                <small id="numValid" style="display: none;color: white;" class="form-text">Este campo es
+                                    obligatorio.</small>
+
+
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input type="text" class="form-control" aria-describedby="emailHelp"
+                                <input type="text" class="form-control" id="zip" aria-describedby="emailHelp"
                                     placeholder="Zip Code">
-                                <!-- <small id="emailHelp" class="form-text text-muted">Este campo es obligatorio.</small> -->
+                                <small id="zipValid" style="display: none;color: white;" class="form-text">Este campo es
+                                    obligatorio.</small>
+
+
                             </div>
                         </div>
 
                     </div>
 
                     <div class="form-group">
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"
-                            placeholder="Mensaje..."></textarea>
-                        <!-- <small id="emailHelp" class="form-text text-muted">Este campo es obligatorio.</small> -->
+                        <textarea class="form-control" rows="10" placeholder="Mensaje..." id="message"></textarea>
+                        <small id="messageValid" style="display: none;color: white;" class="form-text">Este campo es
+                            obligatorio.</small>
+
+
                     </div>
 
-                    <button class="btn btn-md button-mail" style="width: 100%;background: white;">Enviar</button>
+                    <button class="btn btn-md button-mail" style="width: 100%;background: white;"
+                        onclick="getInputValue();">Enviar</button>
                     <h6 style="color: white;" class="mt-2 mb-1 text-center">O</h6>
                     <a href="https://calendly.com/nayhiragonzalez" target="_blank"
                         class="btn btn-md button-mail1 mt-1 mb-4" style="width: 100%;background: #DCC579;">Programe su
                         cita</a>
-
 
 
                 </div>
