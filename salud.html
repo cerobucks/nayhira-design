@@ -79,9 +79,11 @@
                             <h4 class="pb-3 pt-3">Detalles</h4>
 
                             <p class="tittle-blue">
-                                Es un seguro en el que le ayudara a usted y a su familia a cubrir parte de los altos costos médicos en caso de una enfermedad o una 
-                                emergencia y podría calificar a una variedad de planes de salud con una compañía privada acuerdo a sus necesidades.   
-                                
+                                Es un seguro en el que le ayudara a usted y a su familia a cubrir parte de los altos
+                                costos médicos en caso de una enfermedad o una
+                                emergencia y podría calificar a una variedad de planes de salud con una compañía privada
+                                acuerdo a sus necesidades.
+
                             </p>
                         </div>
                     </div>
@@ -93,9 +95,11 @@
 
 
                             <p class="tittle-blue">
-                                Estos seguros le cubrirán en caso de una emergencia, hospitalización o cirugías dependiendo del tipo de plan que usted elija. Tendrá 
-atención médica aun teniendo enfermedades preexistentes y le cubrirán gastos médicos, clínicos o farmacéuticos. 
-                                
+                                Estos seguros le cubrirán en caso de una emergencia, hospitalización o cirugías
+                                dependiendo del tipo de plan que usted elija. Tendrá
+                                atención médica aun teniendo enfermedades preexistentes y le cubrirán gastos médicos,
+                                clínicos o farmacéuticos.
+
                             </p>
                         </div>
 
@@ -103,7 +107,7 @@ atención médica aun teniendo enfermedades preexistentes y le cubrirán gastos 
                     </div>
 
 
-                
+
 
                     <div class="col-md-4 tittle-yellow mt-1">
                         <div class=" card p-2 text-center anim-img">
@@ -112,17 +116,21 @@ atención médica aun teniendo enfermedades preexistentes y le cubrirán gastos 
 
                             <p class="tittle-blue">
 
-                                Tendrá copagos muy bajos en el momento que tenga que usar el seguro médico dependiendo del plan del
-                                asegurado. Podrá acceder a cualquier doctor que esté dentro de la red de médicos de la compañía dependiendo de la cobertura que usted 
-                                tenga. También ofrecen atención de medicina preventiva y tratamientos a sus enfermedades o accidentes. Así mismo tendrá acceso a servicios
-                                de maternidad y neonatales (antes y después del nacimiento del bebe), y acceso a servicios de laboratorios y de prevención.
+                                Tendrá copagos muy bajos en el momento que tenga que usar el seguro médico dependiendo
+                                del plan del
+                                asegurado. Podrá acceder a cualquier doctor que esté dentro de la red de médicos de la
+                                compañía dependiendo de la cobertura que usted
+                                tenga. También ofrecen atención de medicina preventiva y tratamientos a sus enfermedades
+                                o accidentes. Así mismo tendrá acceso a servicios
+                                de maternidad y neonatales (antes y después del nacimiento del bebe), y acceso a
+                                servicios de laboratorios y de prevención.
 
                             </p>
                         </div>
 
                     </div>
 
-                   
+
 
 
                 </div>
@@ -132,9 +140,11 @@ atención médica aun teniendo enfermedades preexistentes y le cubrirán gastos 
             <h1 class="pt-5 tittle-yellow text-center col-md-12">Compañias</h1>
 
             <div class="container">
-                <p class=" col-md-12 text-center" style="color: white;"> Bluecross Blueshield, Ambetter, Cigna, Bright Health, Highmark, Oscar, United Healthcare, Kaiser Permanent, CareFirst, 
-                    Health New England, Molina Healthcare, Amerihealth, Emblement, MVP Healthcare, Capital BC, Geisinger, Oxford, Horizon Bluecross, Optima 
-                    Health.  </p>
+                <p class=" col-md-12 text-center" style="color: white;"> Bluecross Blueshield, Ambetter, Cigna, Bright
+                    Health, Highmark, Oscar, United Healthcare, Kaiser Permanent, CareFirst,
+                    Health New England, Molina Healthcare, Amerihealth, Emblement, MVP Healthcare, Capital BC,
+                    Geisinger, Oxford, Horizon Bluecross, Optima
+                    Health. </p>
             </div>
 
 
@@ -294,7 +304,7 @@ atención médica aun teniendo enfermedades preexistentes y le cubrirán gastos 
 
             if (name != "" && re.test(email) != "" && num != "" && zip != "" && message != "") {
 
-                  let body = " <strong>Nombre:</strong> "+name+", <strong>Email:</strong> "+email+",<strong>Tel:</strong> "+num+", <strong>Zip Code:</strong> "+zip+",<br><br><strong>Mensaje</strong>: " + message;
+                let body = " <strong>Nombre:</strong> " + name + ", <strong>Email:</strong> " + email + ",<strong>Tel:</strong> " + num + ", <strong>Zip Code:</strong> " + zip + ",<br><br><strong>Mensaje</strong>: " + message;
 
                 Email.send({
                     SecureToken: "192635e4-cc55-4f08-808a-3d39fb2b7000",
@@ -392,7 +402,13 @@ atención médica aun teniendo enfermedades preexistentes y le cubrirán gastos 
 
                     <button class="btn btn-md button-mail" style="width: 100%;background: white;"
                         onclick="getInputValue();">Enviar</button>
-                    <h6 style="color: white;" class="mt-2 mb-1 text-center">O</h6>
+                    <p class="mt-1" style="color: white;font-size: 13px;">Al darle click a enviar, estoy de acuerdo con
+                        las <strong data-toggle="modal" data-target="#exampleModal" style="cursor: pointer;">Políticas
+                            de
+                            privacidad</strong></p>
+
+                    <h6 style="color: white;" class=" mb-1 text-center">O</h6>
+                    
                     <a href="https://calendly.com/nayhiragonzalez" target="_blank"
                         class="btn btn-md button-mail1 mt-1 mb-4" style="width: 100%;background: #DCC579;">Programe su
                         cita</a>
@@ -454,9 +470,9 @@ atención médica aun teniendo enfermedades preexistentes y le cubrirán gastos 
         </div>
     </div>
 
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
-        aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-xl" role="document">
             <div class="modal-content">
 
@@ -468,8 +484,7 @@ atención médica aun teniendo enfermedades preexistentes y le cubrirán gastos 
                                 <h4 style="color:white;">Políticas de privacidad</h4>
                             </div>
                             <div class="col-2 text-right">
-                                <i class="fa fa-times" style="color:white;" data-dismiss="modal"
-                                    aria-label="Close"></i>
+                                <i class="fa fa-times" style="color:white;" data-dismiss="modal" aria-label="Close"></i>
                             </div>
                             <div class="col-md-12 text-left">
 
